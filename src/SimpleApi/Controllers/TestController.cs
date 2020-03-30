@@ -23,5 +23,11 @@ namespace SimpleApi.Controllers
         {
             return "The Test Controller Result";
         }
+
+        [HttpGet]
+        public String Get(int id)
+        {
+            return ("You have passed id {0}" + id.ToString());
+        }
     }
 }
