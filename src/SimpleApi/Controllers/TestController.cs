@@ -13,18 +13,13 @@ namespace SimpleApi.Controllers
     {
       
 
-        public TestController()
-        {
-           
-        }
-
         [HttpGet]
         public String Get()
         {
             return "The Test Controller Result";
         }
 
-        [HttpGet]
+       [HttpGet("{id}")]
         public String Get(int id)
         {
             return ("You have passed id {0}" + id.ToString());
